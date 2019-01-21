@@ -7,7 +7,6 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.sandiplayek.anrdetection.AppStopReport.UnCaughtException;
 import com.sandiplayek.anrwatcher.anrdetector.ANRWatchDog;
 import com.sandiplayek.anrwatcher.anrdetector.ANRWatchdogTestApplication;
 
@@ -19,7 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Thread.setDefaultUncaughtExceptionHandler(new UnCaughtException(this));
         ANRWatchDog anrWatchDog = ((ANRWatchdogTestApplication) getApplication()).anrWatchDog;
         //anrWatchDog.setReportThreadNamePrefix("APP:");
         anrWatchDog.setReportMainThreadOnly();
