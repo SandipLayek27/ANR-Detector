@@ -23,7 +23,7 @@ AND
 
 ```sh
 dependencies {
-	implementation ''
+	implementation 'implementation 'com.github.SandipLayek27:ANR-Detector:1.0''
 }
 ```
 
