@@ -1,1 +1,1 @@
-include ':app', ':anrwatcher'
+include ':app', ':anrwatcher', ':ANRDetector'
