@@ -23,7 +23,7 @@ AND
 
 ```sh
 dependencies {
-	implementation 'implementation 'com.github.SandipLayek27:ANR-Detector:1.0'
+	implementation 'implementation 'com.github.SandipLayek27:ANR-Detector:1.9'
 }
 ```
 
@@ -36,7 +36,7 @@ ALSO USE HERE UNCAUGHT EXCEPTION LIBRARY WHICH MAY HELP YOU HOLD THE ERROR/ANR R
 ★ CODE USES.
 ```
 protected void onCreate(Bundle savedInstanceState) {
-  //USE HERE UNCAUGHT EXCEPTION LIBRARY
+  //USE HERE UNCAUGHT EXCEPTION LIBRARY FOR CATCH ANR REPORT
   //Thread.setDefaultUncaughtExceptionHandler(new UnCaughtException(this));
   ANRWatchDog anrWatchDog = ((ANRWatchdogTestApplication) getApplication()).anrWatchDog;
   //anrWatchDog.setReportThreadNamePrefix("APP:");
