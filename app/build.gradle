@@ -28,7 +28,7 @@ dependencies {
     implementation project(path: ':anrwatcher')
 }
 task deleteJar(type: Delete) {
-    delete 'libs/ANRWatcher.jar'
+    //delete 'libs/ANRWatcher.jar'
 }
 
 task createJar(type: Copy) {
