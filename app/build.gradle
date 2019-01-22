@@ -26,18 +26,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation project(path: ':anrwatcher')
 }
-task deleteJar(type: Delete) {
-    //delete 'libs/ANRWatcher.jar'
-}
-
-task createJar(type: Copy) {
-    from('build/intermediates/bundles/release/')
-    into('libs/jars/')
-    include('classes.jar')
-    rename('classes.jar', 'ANRWatcher.jar')
-}
-
-createJar.dependsOn(deleteJar, build)
 
 android {
     lintOptions {
